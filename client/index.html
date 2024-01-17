@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
+        body {
+            color: whitesmoke;
+            font-family: 'Rubik', sans-serif;
+            background-color: #333;
+        }
+
+        #message-container {
+          border: 2px solid black;
+          background-image: url(./photo-1432847712612-926caafaa802.avif);
+          border-radius: 10px;
+		  width: 70vw;
+		  height: 70vh;
+		  position: absolute;
+		  left: 50%;
+		  top: 36%;
+		  transform: translate(-50%, -50%);
+          overflow: overlay;
+        }
+
+        button {
+            width: 6vw;
+            border: none;
+            border-radius: 5px;
+            height: 4vh;
+            background-image: url('./pexels-rovenimagescom-949587.jpg');
+            font-weight: bolder;
+            color: white;
+            font-style: italic;
+        }
+
+        input {
+            width: 50vw;
+            border: none;
+            border-radius: 5px;
+            height: 4vh;
+            color: black;
+        }
+        
+        #mess-container {
+            background-image: url(./photo-1432847712612-926caafaa802.avif);
+            position: absolute;
+		    left: 50%;
+		    top: 75vh;
+		    transform: translate(-50%, -50%); 
+            width: 70vw;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        #room-container {
+            background-image: url(./photo-1432847712612-926caafaa802.avif);
+            display: block;
+            position: absolute;
+		    left: 50%;
+		    top: 83vh;
+		    transform: translate(-50%, -50%);
+            width: 70vw;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        label {
+            display: inline-block;
+            width: 7vw;
+            text-align: center;
+            color: black;
+            font-weight: bold;
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        #your-message {
+            background-color: #887c7c;
+            width: 69vw;
+            border: none;
+            border-radius: 10px;
+            height: 6vh;
+            padding-top: 2vh;
+            padding-left: 1vw;
+            padding-right: 0;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="message-container"></div>
+    <form id="form-container">
+        <div id="mess-container">
+            <label for="meassage-input">Message</label>
+            <input type="text" id="message-input">
+            <button type="submit" id="send-button">Send</button>
+        </div>
+
+        <div id="room-container">
+            <label for="room-input">Room</label>
+            <input type="text" id="room-input">
+            <button type="button" id="room-button">Join</button>
+        </div>
+    </form>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
